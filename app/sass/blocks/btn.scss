@@ -1,0 +1,44 @@
+
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+  border: 3px solid #9a0fe0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 400;
+
+  &:hover,
+  &:focus {
+    border-color: #a9c45e;
+    outline: none;
+  }
+
+  &:active {
+    border-color: #9a0fe0;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    width: 95px;
+    height: 95px;
+    font-size: 20px;
+  }
+}
+
+
