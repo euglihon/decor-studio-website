@@ -1,20 +1,24 @@
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .container {
+
+    border-left: 1px solid aqua;
+    border-right: 1px solid aqua;
+
     margin: 0 auto;
-    width: 708px;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 728px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1220px;
+    width: 944px;
     padding-left: 40px;
     padding-right: 40px;
   }
