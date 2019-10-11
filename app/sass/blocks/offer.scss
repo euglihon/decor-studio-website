@@ -1,0 +1,85 @@
+.offer__wrapper {
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.offer__line {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #111;
+  z-index: -1;
+}
+
+.offer__title {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  display: block;
+  width: fit-content;
+  font-size: 38px;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.offer__block {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  position: relative;
+  max-width: 370px;
+}
+
+.offer__block-title {
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  background-color: $main-color;
+}
+
+.offer__bgrnd {
+  min-height: 280px;
+  background-color: $main-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--one {
+    background-image: url('../img/megakwiat.jpg');
+  }
+
+  &--two {
+    background-image: url('../img/sciana.jpg');
+  }
+}
+
+.offer__link {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}

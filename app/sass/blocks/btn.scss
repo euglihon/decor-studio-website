@@ -5,39 +5,30 @@
   vertical-align: top;
   text-align: center;
   cursor: pointer;
-  border: 3px solid #9a0fe0;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  color: #fff;
-  background-color: transparent;
-  font-size: 13px;
+  border-bottom: 1px solid #791075;
+  border-right: 1px solid #791075;
   font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111;
+  background-color: #fff;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   &:hover,
   &:focus {
-    border-color: #a9c45e;
+    color: #fff;
+    background-color: #791075;
+    border-color: none;
     outline: none;
+    transition: .3s linear;
   }
 
   &:active {
-    border-color: #9a0fe0;
-  }
-}
-
-@media (min-width: 768px) {
-  .btn {
-    width: 80px;
-    height: 80px;
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .btn {
-    width: 95px;
-    height: 95px;
-    font-size: 20px;
+    color: #111;
+    background-color: #fff;
   }
 }
 
