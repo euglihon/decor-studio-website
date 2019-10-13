@@ -5,23 +5,22 @@
   vertical-align: top;
   text-align: center;
   cursor: pointer;
-  border-bottom: 1px solid #791075;
-  border-right: 1px solid #791075;
+  border: 2px solid #111;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #111;
   background-color: #fff;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
   &:hover,
   &:focus {
     color: #fff;
     background-color: #791075;
-    border-color: none;
+    border-color: #791075;
     outline: none;
     transition: .3s linear;
   }
@@ -32,4 +31,23 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .btn {
+    font-size: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .btn {
+    font-size: 18px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 15x;
+    padding-bottom: 15px;
+  }
+
+}

@@ -1,6 +1,7 @@
 .offer__wrapper {
   margin-bottom: 35px;
   position: relative;
+  width: 100%;
 }
 
 .offer__line {
@@ -8,7 +9,7 @@
   display: block;
   top: 50%;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #111;
   z-index: -1;
 }
@@ -26,23 +27,6 @@
   background-color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .offer__block {
   margin-left: auto;
   margin-right: auto;
@@ -53,9 +37,9 @@
 
 .offer__block-title {
   margin: 0;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 26px;
   font-weight: 400;
   color: #fff;
   background-color: $main-color;
@@ -68,12 +52,52 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &--one {
-    background-image: url('../img/megakwiat.jpg');
+  &--kwiaty {
+    background-image: url('../img/offer/megakwiat.jpg');
   }
 
-  &--two {
-    background-image: url('../img/sciana.jpg');
+  &--sciana {
+    background-image: url('../img/offer/sciana.jpg');
+  }
+
+  &--zestaw {
+    background-image: url('../img/offer/zestaw.jpg');
+  }
+
+  &--zwierzeta {
+    background-image: url('../img/offer/zwierzeta.jpg');
+  }
+
+  &--serce {
+    background-image: url('../img/offer/serce.jpg');
+  }
+
+  &--rozety {
+    background-image: url('../img/offer/rozety.jpg');
+  }
+
+  &--bukiet {
+    background-image: url('../img/offer/bukiet.jpg');
+  }
+
+  &--pompony {
+    background-image: url('../img/offer/pompony.jpg');
+  }
+
+  &--pergola {
+    background-image: url('../img/offer/pergola.jpg');
+  }
+
+  &--wypozyczalnia {
+    background-image: url('../img/offer/wypozyczalnia.jpg');
+  }
+
+  &--witryny {
+    background-image: url('../img/offer/witryny.jpg');
+  }
+
+  &--dekoracje {
+    background-image: url('../img/offer/dekoracje.jpg');
   }
 }
 
@@ -82,4 +106,44 @@
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .offer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .offer__title {
+    margin-left: 35px;
+    font-size: 32px;
+  }
+
+  .offer__block {
+    margin: 0;
+    margin-bottom: 35px;
+    width: 220px;
+  }
+
+  .offer__block-title {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .offer__bgrnd {
+    min-height: 180px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer__block {
+    margin-bottom: 55px;
+    width: 280px;
+  }
+
+  .offer__bgrnd {
+    min-height: 230px;
+  }
 }
