@@ -5,7 +5,7 @@
   vertical-align: top;
   text-align: center;
   cursor: pointer;
-  border: 2px solid #111;
+  border: 1px solid #111;
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
@@ -14,15 +14,15 @@
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 18px;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
 
   &:hover,
   &:focus {
     color: #fff;
-    background-color: #791075;
-    border-color: #791075;
+    background-color: $main-color; //#791075;
+    border-color: $main-color; //791075;
     outline: none;
-    transition: .3s linear;
+    transition: .2s linear;
   }
 
   &:active {
@@ -47,7 +47,7 @@
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 15x;
-    padding-bottom: 15px;
+    padding-bottom: 13px;
   }
 
 }
