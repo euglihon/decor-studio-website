@@ -121,6 +121,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-contact__map-iframe {
+    width: 340px;
+    height: 270px;
+    border: 0;
+  }
+
   .main-contact {
     position: relative;
   }
