@@ -29,6 +29,12 @@
     color: #111;
     background-color: #fff;
   }
+
+  &--pink:hover,
+  &--pink:focus {
+    color: #fff;
+    background-color: $pink-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -49,5 +55,4 @@
     padding-top: 15x;
     padding-bottom: 13px;
   }
-
 }
