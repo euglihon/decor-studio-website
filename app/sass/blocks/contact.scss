@@ -1,0 +1,62 @@
+.contact {
+  margin-bottom: 30px;
+}
+
+.contact__main-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  max-width: 500px;
+  background-color: $main-color;
+  color: #fff;
+}
+
+.contact__wrapper {
+  margin-bottom: 30px;
+}
+
+.contact__crop {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.contact__block {
+  background-color: $main-color;
+  color: #fff;
+}
+
+@media (min-width: $tablet-width) {
+  .contact {
+    position: relative;
+  }
+
+  .contact__crop {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    max-width: 580px;
+    height: auto;
+    z-index: -1;
+  }
+
+  .contact__main-wrapper {
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left: auto;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact__main-wrapper {
+    max-width: 540px;
+  }
+
+  .contact__crop {
+    top: 60px;
+  }
+}
