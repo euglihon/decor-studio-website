@@ -10,7 +10,21 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
-gulp.task('sass', function() { // Создаем таск Sass
+  gulp.task('sass-gallery', function() { // Создаем таск Sass
+    return gulp.src('app/sass/style-gallery.scss') // Берем источник
+      .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
+      .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
+      .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
+      .pipe(cssnano()) // Сжимаем
+      .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+      .pipe(gulp.dest('app/css'))
+      .pipe(browserSync.reload({stream: true}));// Обновляем CSS на странице при изменении
+  });
+
+
+
+
+  gulp.task('sass', function() { // Создаем таск Sass
 	return gulp.src('app/sass/style.scss') // Берем источник
 		.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
@@ -21,16 +35,6 @@ gulp.task('sass', function() { // Создаем таск Sass
 		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
-gulp.task('sass-gallery', function() { // Создаем таск Sass
-	return gulp.src('app/sass/style-gallery.scss') // Берем источник
-		.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
-		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-		.pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
-		.pipe(cssnano()) // Сжимаем
-		.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-		.pipe(gulp.dest('app/css'))
-		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
-});
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
 	browserSync({ // Выполняем browserSync
@@ -94,11 +98,12 @@ gulp.task('clear', function (callback) {
 	return cache.clearAll();
 })
 
+
 gulp.task('watch', function() {
-	gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами
+  gulp.watch('app/sass/**/*.scss', ['sass', 'sass-gallery']); // Наблюдение за sass файлами
 	gulp.watch('app/*.html', ['code']); // Наблюдение за HTML файлами в корне проекта
 	gulp.watch('app/js/**/*.js', ['scripts']); // Наблюдение за главным JS файлом и за библиотеками
 });
-gulp.task('default', ['sass', 'sass-gallery', 'scripts', 'browser-sync', 'watch']);
+gulp.task('default', ['sass-gallery', 'sass', 'scripts', 'browser-sync', 'watch']);
 gulp.task('build', ['prebuild', 'clean', 'img', 'sass', 'sass-gallery', 'scripts']);
 
