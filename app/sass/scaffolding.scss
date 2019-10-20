@@ -10,10 +10,11 @@ body {
   line-height: 18px;
   color: #111;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 img {
+  pointer-events: none;
   max-width: 100%;
   height: auto;
 }

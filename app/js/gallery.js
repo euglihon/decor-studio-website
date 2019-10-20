@@ -15,11 +15,13 @@ for (let i = 0; i < btn.length; i++) {
       for (let i = 0; i < img.length; i++) {
         if (btn[i].dataset.number == numberBtn) {
           img[i].style.display = 'none';
+          btn[i].style.outline = 'none';
         }
       }
       img[i].style.display = 'block';
+      btn[i].style.outline = '2px solid #00accc';
     }
   });
-};
+}
 
 
