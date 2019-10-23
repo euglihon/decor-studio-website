@@ -51,6 +51,23 @@
   background-color: $main-color;
   background-size: cover;
 
+  &--hearts,
+  &--pompons,
+  &--pergola,
+  &--chair,
+  &--table,
+  &--candy-bar {
+    width: 80px;
+    height: 60px;
+  }
+
+  &--wall-ecru,
+  &--wall-elg,
+  &--wall-br {
+    width: 90px;
+    height: 70px;
+  }
+
   &:nth-child(1) {
     outline: 2px solid $main-color;
   }
@@ -314,6 +331,281 @@
     background-image: url('../img/bouquet/b-12.jpg');
   }
 
+  &--hearts:nth-child(1) {
+    background-image: url('../img/hearts/her-1.jpg');
+  }
+  &--hearts:nth-child(2) {
+    background-image: url('../img/hearts/her-2.jpg');
+  }
+  &--hearts:nth-child(3) {
+    background-image: url('../img/hearts/her-3.jpg');
+  }
+  &--hearts:nth-child(4) {
+    background-image: url('../img/hearts/her-4.jpg');
+  }
+  &--hearts:nth-child(5) {
+    background-image: url('../img/hearts/her-5.jpg');
+  }
+  &--hearts:nth-child(6) {
+    background-image: url('../img/hearts/her-6.jpg');
+  }
+
+  &--pompons:nth-child(1) {
+    background-image: url('../img/pompons/p-1.jpg');
+  }
+  &--pompons:nth-child(2) {
+    background-image: url('../img/pompons/p-2.jpg');
+  }
+  &--pompons:nth-child(3) {
+    background-image: url('../img/pompons/p-3.jpg');
+  }
+  &--pompons:nth-child(4) {
+    background-image: url('../img/pompons/p-4.jpg');
+  }
+  &--pompons:nth-child(5) {
+    background-image: url('../img/pompons/p-5.jpg');
+  }
+  &--pompons:nth-child(6) {
+    background-image: url('../img/pompons/p-6.jpg');
+  }
+
+  &--pergola:nth-child(1) {
+    background-image: url('../img/pergola/per-1.jpg');
+  }
+  &--pergola:nth-child(2) {
+    background-image: url('../img/pergola/per-2.jpg');
+  }
+  &--pergola:nth-child(3) {
+    background-image: url('../img/pergola/per-3.jpg');
+  }
+  &--pergola:nth-child(4) {
+    background-image: url('../img/pergola/per-4.jpg');
+  }
+  &--pergola:nth-child(5) {
+    background-image: url('../img/pergola/per-5.jpg');
+  }
+  &--pergola:nth-child(6) {
+    background-image: url('../img/pergola/per-6.jpg');
+  }
+  &--pergola:nth-child(7) {
+    background-image: url('../img/pergola/per-7.jpg');
+  }
+  &--pergola:nth-child(8) {
+    background-image: url('../img/pergola/per-8.jpg');
+  }
+  &--pergola:nth-child(9) {
+    background-image: url('../img/pergola/per-9.jpg');
+  }
+  &--pergola:nth-child(10) {
+    background-image: url('../img/pergola/per-10.jpg');
+  }
+  &--pergola:nth-child(11) {
+    background-image: url('../img/pergola/per-11.jpg');
+  }
+  &--pergola:nth-child(12) {
+    background-image: url('../img/pergola/per-12.jpg');
+  }
+
+  &--chair:nth-child(1) {
+    background-image: url('../img/wedding-decor/chair/kr-1.jpg');
+  }
+  &--chair:nth-child(2) {
+    background-image: url('../img/wedding-decor/chair/kr-2.jpg');
+  }
+  &--chair:nth-child(3) {
+    background-image: url('../img/wedding-decor/chair/kr-3.jpg');
+  }
+  &--chair:nth-child(4) {
+    background-image: url('../img/wedding-decor/chair/kr-4.jpg');
+  }
+  &--chair:nth-child(5) {
+    background-image: url('../img/wedding-decor/chair/kr-5.jpg');
+  }
+  &--chair:nth-child(6) {
+    background-image: url('../img/wedding-decor/chair/kr-6.jpg');
+  }
+
+  &--hall:nth-child(1) {
+    background-image: url('../img/wedding-decor/hall/h-1.jpg');
+  }
+  &--hall:nth-child(2) {
+    background-image: url('../img/wedding-decor/hall/h-2.jpg');
+  }
+  &--hall:nth-child(3) {
+    background-image: url('../img/wedding-decor/hall/h-3.jpg');
+  }
+  &--hall:nth-child(4) {
+    background-image: url('../img/wedding-decor/hall/h-4.jpg');
+  }
+  &--hall:nth-child(5) {
+    background-image: url('../img/wedding-decor/hall/h-5.jpg');
+  }
+  &--hall:nth-child(6) {
+    background-image: url('../img/wedding-decor/hall/h-6.jpg');
+  }
+  &--hall:nth-child(7) {
+    background-image: url('../img/wedding-decor/hall/h-7.jpg');
+  }
+  &--hall:nth-child(8) {
+    background-image: url('../img/wedding-decor/hall/h-8.jpg');
+  }
+  &--hall:nth-child(9) {
+    background-image: url('../img/wedding-decor/hall/h-9.jpg');
+  }
+  &--hall:nth-child(10) {
+    background-image: url('../img/wedding-decor/hall/h-10.jpg');
+  }
+  &--hall:nth-child(11) {
+    background-image: url('../img/wedding-decor/hall/h-11.jpg');
+  }
+  &--hall:nth-child(12) {
+    background-image: url('../img/wedding-decor/hall/h-12.jpg');
+  }
+
+  &--table:nth-child(1) {
+    background-image: url('../img/wedding-decor/table/t-1.jpg');
+  }
+  &--table:nth-child(2) {
+    background-image: url('../img/wedding-decor/table/t-2.jpg');
+  }
+  &--table:nth-child(3) {
+    background-image: url('../img/wedding-decor/table/t-3.jpg');
+  }
+  &--table:nth-child(4) {
+    background-image: url('../img/wedding-decor/table/t-4.jpg');
+  }
+  &--table:nth-child(5) {
+    background-image: url('../img/wedding-decor/table/t-5.jpg');
+  }
+  &--table:nth-child(6) {
+    background-image: url('../img/wedding-decor/table/t-6.jpg');
+  }
+
+  &--candy-bar:nth-child(1) {
+    background-image: url('../img/wedding-decor/candy-bar/c-1.jpg');
+  }
+  &--candy-bar:nth-child(2) {
+    background-image: url('../img/wedding-decor/candy-bar/c-2.jpg');
+  }
+  &--candy-bar:nth-child(3) {
+    background-image: url('../img/wedding-decor/candy-bar/c-3.jpg');
+  }
+  &--candy-bar:nth-child(4) {
+    background-image: url('../img/wedding-decor/candy-bar/c-4.jpg');
+  }
+  &--candy-bar:nth-child(5) {
+    background-image: url('../img/wedding-decor/candy-bar/c-5.jpg');
+  }
+  &--candy-bar:nth-child(6) {
+    background-image: url('../img/wedding-decor/candy-bar/c-6.jpg');
+  }
+
+  &--wall-ecru:nth-child(1) {
+    background-image: url('../img/rent/wall-ecru/wecr-1.jpg');
+  }
+  &--wall-ecru:nth-child(2) {
+    background-image: url('../img/rent/wall-ecru/wecr-2.jpg');
+  }
+  &--wall-ecru:nth-child(3) {
+    background-image: url('../img/rent/wall-ecru/wecr-3.jpg');
+  }
+  &--wall-ecru:nth-child(4) {
+    background-image: url('../img/rent/wall-ecru/wecr-4.jpg');
+  }
+  &--wall-ecru:nth-child(5) {
+    background-image: url('../img/rent/wall-ecru/wecr-5.jpg');
+  }
+
+  &--wall-white:nth-child(1) {
+    background-image: url('../img/rent/wall-white/wwhite-1.jpg');
+  }
+  &--wall-white:nth-child(2) {
+    background-image: url('../img/rent/wall-white/wwhite-2.jpg');
+  }
+  &--wall-white:nth-child(3) {
+    background-image: url('../img/rent/wall-white/wwhite-3.jpg');
+  }
+  &--wall-white:nth-child(4) {
+    background-image: url('../img/rent/wall-white/wwhite-4.jpg');
+  }
+  &--wall-white:nth-child(5) {
+    background-image: url('../img/rent/wall-white/wwhite-5.jpg');
+  }
+  &--wall-white:nth-child(6) {
+    background-image: url('../img/rent/wall-white/wwhite-6.jpg');
+  }
+
+  &--wall-br:nth-child(1) {
+    background-image: url('../img/rent/wall-br/wbr-1.jpg');
+  }
+  &--wall-br:nth-child(2) {
+    background-image: url('../img/rent/wall-br/wbr-2.jpg');
+  }
+  &--wall-br:nth-child(3) {
+    background-image: url('../img/rent/wall-br/wbr-3.jpg');
+  }
+  &--wall-br:nth-child(4) {
+    background-image: url('../img/rent/wall-br/wbr-4.jpg');
+  }
+  &--wall-br:nth-child(5) {
+    background-image: url('../img/rent/wall-br/wbr-5.jpg');
+  }
+
+  &--wall-elg:nth-child(1) {
+    background-image: url('../img/rent/wall-elg/welg-1.jpg');
+  }
+  &--wall-elg:nth-child(2) {
+    background-image: url('../img/rent/wall-elg/welg-2.jpg');
+  }
+  &--wall-elg:nth-child(3) {
+    background-image: url('../img/rent/wall-elg/welg-3.jpg');
+  }
+  &--wall-elg:nth-child(4) {
+    background-image: url('../img/rent/wall-elg/welg-4.jpg');
+  }
+  &--wall-elg:nth-child(5) {
+    background-image: url('../img/rent/wall-elg/welg-5.jpg');
+  }
+
+  &--wall-bkr:nth-child(1) {
+    background-image: url('../img/rent/wall-bkr/wbkr-1.jpg');
+  }
+  &--wall-bkr:nth-child(2) {
+    background-image: url('../img/rent/wall-bkr/wbkr-2.jpg');
+  }
+  &--wall-bkr:nth-child(3) {
+    background-image: url('../img/rent/wall-bkr/wbkr-3.jpg');
+  }
+  &--wall-bkr:nth-child(4) {
+    background-image: url('../img/rent/wall-bkr/wbkr-4.jpg');
+  }
+  &--wall-bkr:nth-child(5) {
+    background-image: url('../img/rent/wall-bkr/wbkr-5.jpg');
+  }
+  &--wall-bkr:nth-child(6) {
+    background-image: url('../img/rent/wall-bkr/wbkr-6.jpg');
+  }
+
+  &--wall-fl:nth-child(1) {
+    background-image: url('../img/rent/flowers/fl-1.jpg');
+  }
+  &--wall-fl:nth-child(2) {
+    background-image: url('../img/rent/flowers/fl-2.jpg');
+  }
+  &--wall-fl:nth-child(3) {
+    background-image: url('../img/rent/flowers/fl-3.jpg');
+  }
+  &--wall-fl:nth-child(4) {
+    background-image: url('../img/rent/flowers/fl-4.jpg');
+  }
+  &--wall-fl:nth-child(5) {
+    background-image: url('../img/rent/flowers/fl-5.jpg');
+  }
+  &--wall-fl:nth-child(6) {
+    background-image: url('../img/rent/flowers/fl-6.jpg');
+  }
+
+
   &:hover,
   &:focus {
     outline: 2px solid $main-color;
@@ -337,6 +629,30 @@
   margin-bottom: 15px;
   text-indent: 20px;
   text-align: justify;
+
+  &--wall-ecru,
+  &--wall-br,
+  &--wall-elg,
+  &--wall-white,
+  &--wall-bkr,
+  &--wall-fl {
+    text-align: center;
+  }
+}
+
+.gallery__table {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  font-weight: 300;
+}
+
+.gallery__table-item {
+  position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 18px;
 }
 
 .gallery__price-box {
@@ -378,20 +694,21 @@
 
 
 
-
-
-
-
-
-
-
-
 @media (min-width: $tablet-width) {
   .gallery {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    &--wall-ecru,
+    &--wall-br,
+    &--wall-elg,
+    &--wall-white,
+    &--wall-bkr,
+    &--wall-fl {
+      justify-content: center;
+    }
   }
 
   .gallery__title {
@@ -412,12 +729,33 @@
 
   .gallery__img {
     max-width: 450px;
+
+    &--wall-ecru,
+    &--wall-white,
+    &--wall-elg,
+    &--wall-br,
+    &--wall-bkr,
+    &--wall-fl {
+      width: 100%;
+      max-width: none;
+    }
   }
 
   .gallery__btn-box {
     margin: 0;
     max-width: 270px;
     justify-content: space-between;
+
+    &--wall-ecru,
+    &--wall-white,
+    &--wall-elg,
+    &--wall-br,
+    &--wall-bkr,
+    &--wall-fl {
+      margin-left: 8px;
+      max-width: 100px;
+      justify-content: flex-end;
+    }
   }
 
   .gallery__btn {
@@ -425,14 +763,91 @@
     margin-bottom: 8px;
     width: 85px;
     height: 78px;
+
+    &--hearts,
+    &--pompons,
+    &--chair,
+    &--table,
+    &--candy-bar {
+      width: 131px;
+      height: 107px;
+    }
+    &--pergola {
+      margin-bottom: 10px;
+      width: 85px;
+      height: 105px;
+    }
+
+    &--wall-ecru,
+    &--wall-white,
+    &--wall-elg,
+    &--wall-br,
+    &--wall-bkr,
+    &--wall-fl {
+      margin-bottom: 8px;
+      width: 100px;
+      height: 71px;
+    }
+
+    &--wall-white,
+    &--wall-bkr,
+    &--wall-fl {
+      height: 58px;
+    }
   }
 
   .gallery__info-box {
     max-width: none;
     padding-left: 20px;
     padding-right: 20px;
+
+    &--wall-ecru,
+    &--wall-white,
+    &--wall-elg,
+    &--wall-br,
+    &--wall-bkr,
+    &--wall-fl {
+      display: flex;
+      justify-content: space-between;
+      width: 630px;
+    }
+  }
+
+  .gallery__text {
+    &--wall-ecru,
+    &--wall-white,
+    &--wall-elg,
+    &--wall-br,
+    &--wall-bkr,
+    &--wall-fl {
+      padding-left: 20px;
+      max-width: 350px;
+    }
+
+    &--wall-elg,
+    &--wall-bkr,
+    &--wall-fl {
+      font-size: 12px;
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -446,6 +861,59 @@
 @media (min-width: $desktop-width) {
   .gallery {
     margin-top: 30px;
+
+    &--wall-ecru,
+    &--wall-white,
+    &--wall-elg,
+    &--wall-br,
+    &--wall-bkr,
+    &--wall-fl {
+      justify-content: space-between;
+    }
+  }
+
+  .gallery__info-box {
+    &--wall-ecru,
+    &--wall-white,
+    &--wall-elg,
+    &--wall-br,
+    &--wall-bkr,
+    &--wall-fl {
+      margin: 0;
+      padding-top: 30px;
+      padding-bottom: 43px;
+      display: block;
+      width: 338px;
+    }
+  }
+
+  .gallery__text {
+    &--wall-ecru,
+    &--wall-white,
+    &--wall-elg,
+    &--wall-br,
+    &--wall-bkr,
+    &--wall-fl {
+      padding-left: 0;
+      margin-bottom: 25px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    &--wall-br {
+      margin-bottom: 78px;
+    }
+
+    &--wall-elg,
+    &--wall-bkr,
+    &--wall-fl {
+      font-size: 14px;
+    }
+
+    &--wall-fl {
+      font-size: 13px;
+      margin-bottom: 27px;
+    }
   }
 
   .gallery__title {
@@ -454,7 +922,6 @@
   }
 
   .gallery__img-box {
-
     &--figures,
     &--rosettes {
       height: 427px;
@@ -468,6 +935,15 @@
     &--rosettes {
       max-width: 560px;
     }
+
+    &--wall-ecru,
+    &--wall-elg,
+    &--wall-white,
+    &--wall-br,
+    &--wall-bkr,
+    &--wall-fl {
+      max-width: none;
+    }
   }
 
   .gallery__btn-box {
@@ -477,16 +953,66 @@
     &--rosettes {
       max-width: 375px;
     }
+
+    &--pergola {
+      max-width: 474px;
+    }
+
+    &--wall-ecru,
+    &--wall-white,
+    &--wall-elg,
+    &--wall-br,
+    &--wall-bkr,
+    &--wall-fl {
+      margin: 0;
+      margin-top: -93px;
+      order: 3;
+      max-width: 600px;
+    }
   }
 
   .gallery__btn {
     margin-bottom: 9px;
-    width: 116px;
+    width: 115px;
     height: 100px;
 
     &--figures,
     &--rosettes {
       width: 119px;
+    }
+
+    &--hearts,
+    &--pompons,
+    &--chair,
+    &--table,
+    &--candy-bar {
+      width: 178px;
+      height: 136px;
+    }
+
+    &--pergola {
+      margin-bottom: 12px;
+      width: 151px;
+      height: 106px;
+    }
+
+    &--wall-ecru,
+    &--wall-white,
+    &--wall-elg,
+    &--wall-br,
+    &--wall-bkr,
+    &--wall-fl {
+      margin-right: 6px;
+      margin-bottom: 0;
+      width: 107px;
+      height: 92px;
+    }
+
+    &--wall-white,
+    &--wall-bkr,
+    &--wall-fl {
+      margin-right: 5px;
+      width: 89px;
     }
   }
 
