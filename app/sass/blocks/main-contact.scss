@@ -49,11 +49,14 @@
 }
 
 .main-contact__contact {
+  display: block;
   padding-left: 20px;
   position: relative;
   color: #111;
   line-height: 28px;
   font-weight: 400;
+  width: fit-content;
+  margin: 0 auto;
 
   &:hover,
   &:focus {
@@ -64,20 +67,18 @@
     opacity: 0.3;
   }
 
-  &--cotact-page {
-    color: #fff;
-  }
-
   &--contact-page {
     color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
+
 }
 
 .main-contact__logo-svg {
-  display: block;
   position: absolute;
   left: 0;
-  bottom: 8%;
+  bottom: 20%;
 
   &--contact-page {
     fill: #fff;
@@ -123,6 +124,15 @@
     width: 340px;
     height: 270px;
     border: 0;
+  }
+
+  .main-contact__contact {
+    margin-left: 0;
+    margin-right: auto;
+
+    &--contact-page {
+      margin: 0 auto;
+    }
   }
 
   .main-contact {
