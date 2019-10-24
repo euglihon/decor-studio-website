@@ -688,8 +688,11 @@
   transform: translateY(-50%);
 }
 
-
-
+.gallery__main-btn {
+  &--rent {
+    margin-top: 20px;
+  }
+}
 
 
 
@@ -829,6 +832,17 @@
     &--wall-fl {
       font-size: 12px;
     }
+  }
+
+  .gallery__main-btn {
+    &--rent {
+      margin: 0;
+      margin-left: 30px;
+    }
+  }
+
+  .gallery__br {
+    display: none;
   }
 }
 
