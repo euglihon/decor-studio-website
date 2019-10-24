@@ -1,3 +1,12 @@
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -11,7 +20,12 @@ body {
   color: #111;
   font-style: normal;
   font-weight: 400;
+  scroll-behavior: smooth;
+
+  animation: fade-in 1.5s ease;
+
 }
+
 
 img {
   pointer-events: none;
