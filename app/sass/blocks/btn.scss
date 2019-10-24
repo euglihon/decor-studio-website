@@ -5,7 +5,8 @@
   vertical-align: top;
   text-align: center;
   cursor: pointer;
-  border: 1px solid #111;
+  border: none;
+  outline: 1px solid #111;
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
@@ -19,10 +20,9 @@
   &:hover,
   &:focus {
     color: #fff;
-    background-color: $main-color; //#791075;
-    border-color: $main-color; //791075;
+    background-color: $main-color;
     outline: none;
-    transition: .2s linear;
+    transition: .3s linear;
   }
 
   &:active {
