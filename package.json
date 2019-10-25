@@ -22,6 +22,7 @@
     "imagemin-pngquant": "^7.0.0"
   },
   "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
     "save-dev": "0.0.1-security"
   }
 }

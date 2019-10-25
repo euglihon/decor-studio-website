@@ -1,14 +1,15 @@
-var gulp       = require('gulp'), // Подключаем Gulp
-  sass         = require('gulp-sass'), //Подключаем Sass пакет,
-	browserSync  = require('browser-sync'), // Подключаем Browser Sync
-	uglify       = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
-	cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
-	rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
-	del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
-	imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
-	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
-	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
-	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
+var gulp       = require('gulp'),
+  sass         = require('gulp-sass'),
+	browserSync  = require('browser-sync'),
+	uglify       = require('gulp-uglifyjs'),
+	cssnano      = require('gulp-cssnano'),
+	rename       = require('gulp-rename'),
+	del          = require('del'),
+	imagemin     = require('gulp-imagemin'),
+	pngquant     = require('imagemin-pngquant'),
+	cache        = require('gulp-cache'),
+  autoprefixer = require('gulp-autoprefixer'),
+  htmlmin = require('gulp-htmlmin');
 
   gulp.task('sass-gallery', function() { // Создаем таск Sass
     return gulp.src('app/sass/style-gallery.scss') // Берем источник
@@ -20,9 +21,6 @@ var gulp       = require('gulp'), // Подключаем Gulp
       .pipe(gulp.dest('app/css'))
       .pipe(browserSync.reload({stream: true}));// Обновляем CSS на странице при изменении
   });
-
-
-
 
   gulp.task('sass', function() { // Создаем таск Sass
 	return gulp.src('app/sass/style.scss') // Берем источник
@@ -60,31 +58,34 @@ gulp.task('code', function() {
 
 
 gulp.task('clean', async function() {
-	return del.sync('dist'); // Удаляем папку dist перед сборкой
+	return del.sync('dist');
 });
 
 gulp.task('img', function() {
-	return gulp.src('app/img/**/*') // Берем все изображения из app
+	return gulp.src('app/img/**/*')
 		//.pipe(cache(imagemin({ // С кешированием
-		.pipe(imagemin({ // Сжимаем изображения без кеширования
+		.pipe(imagemin({
 			interlaced: true,
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		}))/*)*/
-		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
-	});
+		.pipe(gulp.dest('dist/img'));
+  });
+
+  gulp.task('htmlmin', () => {
+    return gulp.src('app/*.html')
+      .pipe(htmlmin({ collapseWhitespace: true }))
+      .pipe(gulp.dest('dist'));
+  });
 
 gulp.task('prebuild', async function() {
 
-	var buildCss = gulp.src('app/css/**/*') // Переносим скрипты в продакшен
+	var buildCss = gulp.src('app/css/**/*')
 	.pipe(gulp.dest('dist/css'))
 
-	var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
+	var buildJs = gulp.src('app/js/**/*')
 	.pipe(gulp.dest('dist/js'))
-
-	var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
-	.pipe(gulp.dest('dist'));
 
 });
 
@@ -99,5 +100,5 @@ gulp.task('watch', function() {
 	gulp.watch('app/js/**/*.js', ['scripts']); // Наблюдение за главным JS файлом и за библиотеками
 });
 gulp.task('default', ['sass-gallery', 'sass', 'scripts', 'browser-sync', 'watch']);
-gulp.task('build', ['prebuild', 'clean', 'img', 'sass', 'sass-gallery', 'scripts']);
+gulp.task('build', ['prebuild', 'clean', 'img', 'htmlmin', 'sass', 'sass-gallery', 'scripts']);
 
