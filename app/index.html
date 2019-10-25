@@ -228,16 +228,16 @@
         </div>
 
         <div class="main-contact__form">
-          <form action="#" method="GET">
+          <form action="mail.php" method="POST">
 
             <div class="form__block">
               <label class="form__label" for="you-name">Imię: *</label>
-              <input class="form__input" type="text" id="you-name" name="you-name" placeholder="Wprowadź imię" required>
+              <input class="form__input" type="text" id="you-name" name="name" placeholder="Wprowadź imię" required>
             </div>
 
             <div class="form__block">
               <label class="form__label" for="phone">Numer Telefonu:</label>
-              <input class="form__input" type="text" id="phone" name="phone" placeholder="Wprowadź numer telefonu">
+              <input class="form__input" type="text" id="phone" name="tel" placeholder="Wprowadź numer telefonu">
               <svg class="form__icon form__icon--phone" width="20px" height="20px">
                 <use xlink:href="img/vector/sprite.svg#icon-phone"></use>
               </svg>
@@ -253,7 +253,7 @@
 
             <div class="form__block">
               <label class="form__label" for="comment">Wiadomość: *</label>
-              <textarea class="form__input form__input--textarea" id="comment" name="comment" placeholder="Wpisz swoją wiadomość" required></textarea>
+              <textarea class="form__input form__input--textarea" id="comment" name="message" placeholder="Wpisz swoją wiadomość" required></textarea>
             </div>
 
             <button class="form__btn btn" type="submit">Wyslij</button>
