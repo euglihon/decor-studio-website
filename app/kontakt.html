@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
   <header class="page-header container">
     <h1 class="visually-hidden">Kontakt, Pracownia dekoracji papierowych</h1>
 
@@ -103,17 +104,40 @@
 
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="main-contact__form main-contact__form--contact-page">
-          <form action="#" method="GET">
+          <form action="mail.php" method="POST">
 
             <div class="form__block">
               <label class="form__label form__label--contact-page" for="you-name">Imię: *</label>
-              <input class="form__input form__input--contact-page" type="text" id="you-name" name="you-name" placeholder="Wprowadź imię" required>
+              <input class="form__input form__input--contact-page" type="text" id="you-name" name="name" placeholder="Wprowadź imię" required>
             </div>
 
             <div class="form__block">
               <label class="form__label form__label--contact-page" for="phone">Numer Telefonu:</label>
-              <input class="form__input form__input--contact-page" type="text" id="phone" name="phone" placeholder="Wprowadź numer telefonu">
+              <input class="form__input form__input--contact-page" type="text" id="phone" name="tel" placeholder="Wprowadź numer telefonu">
               <svg class="form__icon form__icon--phone" width="20px" height="20px">
                 <use xlink:href="img/vector/sprite.svg#icon-phone"></use>
               </svg>
@@ -129,7 +153,7 @@
 
             <div class="form__block">
               <label class="form__label form__label--contact-page" for="comment">Wiadomość: *</label>
-              <textarea class="form__input form__input--textarea form__input--contact-page" id="comment" name="comment" placeholder="Wpisz swoją wiadomość" required></textarea>
+              <textarea class="form__input form__input--textarea form__input--contact-page" id="comment" name="message" placeholder="Wpisz swoją wiadomość" required></textarea>
             </div>
 
             <button class="form__btn form__btn--contact-page btn btn--pink" type="submit">Wyslij</button>
